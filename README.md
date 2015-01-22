@@ -5,11 +5,11 @@ User interface design project.
 
 ### Getting Started
 
-Ensure that you have Node.js installed on your system. Once this is done do the following:
+Ensure that you have [Node.js](http://nodejs.org/) installed on your system. Once this is done do the following:
 
 * Run `npm install`
 
-This will install all of the projet dependecies.
+This will install all of the project dependecies.
 
 * Run `npm start`
 
