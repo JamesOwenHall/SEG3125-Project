@@ -15,10 +15,21 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 
+// Basic error handling
+app.use(function(err, req, res, next) {
+    res.status(err.status || 500);
+    res.render('error', {
+        message: err.message,
+        error: err
+    });
+});
+
+// Define routes
 app.get('/', function(req, res) {
     res.render('index');
-})
+});
 
+// Start server
 app.listen(app.get('port'), function() {
     console.log('This server be starting on ' + app.get('port'));
 });
