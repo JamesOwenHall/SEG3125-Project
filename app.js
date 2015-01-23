@@ -1,17 +1,22 @@
 // Load dependencies
-var express = require('express');
-var favicon = require('serve-favicon');
-var path = require('path');
+var express    = require('express');
+var hogan      = require('hogan-express');
+var favicon    = require('serve-favicon');
+var path       = require('path');
+var logger     = require('morgan');
 var bodyParser = require('body-parser');
 
 var app = express();
 
 // Configure app
 app.set('port', process.env.PORT || 3000);
+app.set('view engine', 'html');
+app.set('layout', 'layout');
+app.engine('html', hogan);
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 
