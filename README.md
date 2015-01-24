@@ -7,10 +7,10 @@ User interface design project.
 
 Ensure that you have [Node.js](http://nodejs.org/) installed on your system. Once this is completed do the following:
 
-* Run `npm install`
+* Run `npm run init`
 
-This will install all of the project's dependecies.
+This will install all of the server-side and front-end dependencies.
 
 * Run `npm start`
 
-This will start the server on port 3000.
+This will run browersify and create the main script bundle as well as starting the server on port 3000.
