@@ -1,0 +1,21 @@
+{
+  "name": "SEG3125-Project",
+  "version": "0.0.0",
+  "homepage": "https://github.com/JamesOwenHall/SEG3125-Project",
+  "authors": [
+    "Martin Sieniawski <m.sieniawski@live.ca>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "backbone": "~1.1.2"
+  }
+}
