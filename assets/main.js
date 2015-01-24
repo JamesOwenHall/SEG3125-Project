@@ -1,5 +1,5 @@
 // Client-side js entry point
-var models = require('./models');
+var structures = require('./structures');
 
-var pizza = new models.MenuItem({title: 'Combination Pizza', type: 'pizza'});
+var pizza = new structures.MenuItem({title: 'Combination Pizza', type: 'pizza'});
 console.log(pizza);
