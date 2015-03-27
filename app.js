@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded());
 
 // Define routes
 app.get('/', function(req, res) {
-    res.render('index');
+    res.render('index', {partials: {navbar: 'navbar'}});
 });
 
 // 404 handling

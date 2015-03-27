@@ -1,7 +1,12 @@
+<!-- Load navbar partial -->
+{{> navbar }}
+
+<!-- Main container -->
 <div class="container">
     <h1>This is the app!</h1>
 </div>
 
+<!-- Load page specific scripts -->
 {{#yield-scripts}}
     <script src="/js/main.js"></script>
 {{/yield-scripts}}

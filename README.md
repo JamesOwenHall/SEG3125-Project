@@ -13,4 +13,4 @@ This will install all of the server-side and front-end dependencies.
 
 * Run `npm start`
 
-This will run browersify and create the main script bundle as well as starting the server on port 3000.
+This will start the server on port 3000.
