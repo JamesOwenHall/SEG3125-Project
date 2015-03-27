@@ -3,8 +3,40 @@
 
 <!-- Main container -->
 <div class="container">
-    <h1>This is the app!</h1>
+    <!-- First menu row -->
+    <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+            <div class="menu-category">
+                <p class="menu-category-title">Menu Item Type</p>
+                <img class="menu-category-image" data-src="holder.js/200x200/sky">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="menu-category">
+                <p class="menu-category-title">Menu item</p>
+                <img class="menu-category-image" data-src="holder.js/200x200/sky">
+            </div>
+        </div>
+    </div>
+    <!-- Second menu row -->
+    <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+            <div class="menu-category">
+                <p class="menu-category-title">Menu Item Type</p>
+                <img class="menu-category-image" data-src="holder.js/200x200/sky">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="menu-category">
+                <p class="menu-category-title">Menu item</p>
+                <img class="menu-category-image" data-src="holder.js/200x200/sky">
+            </div>
+        </div>
+    </div>
 </div>
+
+<!-- Load footer partial -->
+{{> footer }}
 
 <!-- Load page specific scripts -->
 {{#yield-scripts}}
