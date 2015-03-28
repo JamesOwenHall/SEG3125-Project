@@ -1,5 +1,57 @@
 <div class="container">
-    <h1>This is the app!</h1>
+    <h1>Joe's Pizza</h1>
+    <hr>
+    <p class="instructions">Click on a menu item to add it to your order.</p>
+
+    <div class="row menu">
+        <div class="col-sm-12 col-md-6">
+            <h3>Appetizers</h3>
+            <ul>
+                <li><a href="#">Fries</a></li>
+                <li><a href="#">Onion rings</a></li>
+                <li><a href="#">Poutine</a></li>
+                <li><a href="#">Garlic bread</a></li>
+                <li><a href="#">Caesar salad</a></li>
+                <li><a href="#">Zucchini sticks</a></li>
+                <li><a href="#">Chicken fingers</a></li>
+            </ul>
+            <h3>Beverages</h3>
+            <ul>
+                <li><a href="#">Pepsi</a></li>
+                <li><a href="#">7up</a></li>
+                <li><a href="#">Evian water</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <h3>Pizza</h3>
+            <ul>
+                <li><a href="#">Build-your-own pizza</a></li>
+                <li><a href="#">Hawaiian pizza</a></li>
+                <li><a href="#">Meat lovers pizza</a></li>
+                <li><a href="#">Mediterranean pizza</a></li>
+                <li><a href="#">Vegetarian pizza</a></li>
+            </ul>
+            <h3>Platters</h3>
+            <ul>
+                <li><a href="#">Classic Hamburger</a></li>
+                <li><a href="#">Chicken burger</a></li>
+                <li><a href="#">Club sandwich</a></li>
+                <li><a href="#">Chicken strips</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+    <h2>Your Order</h2>
+    <div class="order-carousel"></div>
+    <div class="text-right">
+        <h4>Subtotal: $0.00</h4>
+        <button class="btn btn-primary">Checkout</button>
+    </div>
+
+    <footer>
+        <p class="text-center">&copy; Joe's Pizza 2015.</p>
+    </footer>
 </div>
 
 {{#yield-scripts}}
