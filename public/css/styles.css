@@ -13,8 +13,12 @@ body {
 
 /* Menu */
 
+.menu {
+    padding-top: 60px;
+}
+
 .menu-category {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .menu-category-title {
