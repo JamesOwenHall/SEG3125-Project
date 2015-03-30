@@ -31,6 +31,22 @@ app.get('/', function(req, res) {
         }});
 });
 
+app.get('/contact', function(req, res) {
+    res.render('contact', {
+        partials: {
+            navbar:     'navbar',
+            footer:     'footer'
+        }});
+});
+
+app.get('/checkout', function(req, res) {
+    res.render('checkout', {
+        partials: {
+            navbar:     'navbar',
+            footer:     'footer'
+        }});
+});
+
 // 404 handling
 app.use(function(req, res, next) {
     var err = new Error('Not found!');
