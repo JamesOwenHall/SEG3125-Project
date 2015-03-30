@@ -27,7 +27,8 @@ app.get('/', function(req, res) {
         partials: {
             navbar:     'navbar',
             footer:     'footer',
-            menuModals: 'menu-modals'
+            menuModals: 'menu-modals',
+            cart:       'cart'
         }});
 });
 

@@ -79,3 +79,45 @@ body {
     0.5s transform ease
   ;
 }
+
+/* Cart */
+
+.cart {
+    border: 1px solid #CCC;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.1);
+    height: 125px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.cart-left, .cart-right {
+    display: inline-block;
+    height: 100%;
+    width: 3rem;
+}
+
+.cart-left {
+    float: left;
+}
+
+.cart-right {
+    float: right;
+}
+
+.cart > div {
+    background: #F8F8F8;
+    border: 1px solid #CCC;
+    display: inline-block;
+    height: 113px;
+    margin: 5px 10px;
+    padding: 5px;
+    text-align: center;
+    width: 150px;
+}
+
+.cart > div h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    text-align: center;
+}
