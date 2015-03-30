@@ -3,7 +3,131 @@
 
 <!-- Main Container -->
 <div class="container">
+    <h2>Checkout</h2>
     <div class="row">
-        <h2>Checkout</h2>
+        <div class="col-md-9">
+            <!-- Delivery information -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Delivery Information</h3>
+                </div>
+                <div class="panel-body">
+                    <!-- First row -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="first-name">First name</label>
+                                <input type="text" class="form-control" id="first-name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="last-name">Last name</label>
+                                <input type="text" class="form-control" id="last-name">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second row -->
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="street-no">Street No.</label>
+                                <input type="text" class="form-control" id="street-no">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label for="street-name">Street Name</label>
+                                <input type="text" class="form-control" id="street-name">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="apartment-no">Apartment No.</label>
+                                <input type="text" class="form-control" id="apartment-no">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Third row -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" class="form-control" id="city">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="province">Province</label>
+                                <select class="form-control" id="province">
+                                    <option>Alberta</option>
+                                    <option>British Columbia</option>
+                                    <option>Manitoba</option>
+                                    <option>New Brunswick</option>
+                                    <option>Newfoundland &amp; Labrador</option>
+                                    <option>Nova Scotia</option>
+                                    <option>Ontario</option>
+                                    <option>Prince Edward Island</option>
+                                    <option>Quebec</option>
+                                    <option>Saskatchewan</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="postal-code">Postal Code</label>
+                                <input type="text" class="form-control" id="postal-code" placeholder="E.g. K1M 1M4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-right">
+                <a href="/menu" class="btn btn-default">Change Order</a>
+                <a href="/success" class="btn btn-primary">Place Order</a>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="order-summary">
+                <h2>Summary</h2>
+                <div class="row">
+                    <div class="col-md-2">
+                        1
+                    </div>
+                    <div class="col-md-7">
+                        Build-your-own (M)
+                    </div>
+                    <div class="col-md-3 text-right">
+                        $8.99
+                    </div>
+                </div>
+                <span>===================================</span>
+                <div class="row">
+                    <div class="col-md-6">
+                        Subtotal
+                    </div>
+                    <div class="col-md-6 text-right">
+                        $8.99
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        Tax
+                    </div>
+                    <div class="col-md-6 text-right">
+                        $1.35
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <strong>Total</strong>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <strong>$10.34</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
