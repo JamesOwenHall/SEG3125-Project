@@ -17,19 +17,35 @@
         <link rel="stylesheet" type="text/css" href="/css/styles.css">
     </head>
     <body>
+        <div class="modal fade" id="modal-basic"
+            tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" 
+                            data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>This is a basic modal&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="ui right vertical inverted labeled sidebar menu">
-            <a class="item">
-                <i class="home icon"></i>
-                Home
-            </a>
-            <a class="item">
-                <i class="block layout icon"></i>
-                Topics
-            </a>
-            <a class="item">
-                <i class="smile icon"></i>
-                Friends
-            </a>
+            <div class="item">
+                <p>Pizza</p>
+            </div>
+            <div class="item">
+                <p>Coke Classic</p>
+            </div>
+        </div>
+        <div id="cart" class="ui launch right attached fixed button">
+            <i class="content icon"></i>
+            <span>Cart</span>
         </div>
         <div class="pusher">
             <!-- Load partial-->

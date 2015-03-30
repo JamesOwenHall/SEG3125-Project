@@ -45,3 +45,35 @@ body {
 .center-x {
     text-align: center;
 }
+
+
+/* Launcher */
+.fixed.launch.button {
+  position: fixed;
+  top: 63px;
+  right: -1px;
+
+  height: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition:
+    0.3s width ease,
+    0.5s transform ease
+  ;
+  -moz-transition:
+    0.3s width ease,
+    0.5s transform ease
+  ;
+  -o-transition:
+    0.3s width ease,
+    0.5s transform ease
+  ;
+  -ms-transition:
+    0.3s width ease,
+    0.5s transform ease
+  ;
+  transition:
+    0.3s width ease,
+    0.5s transform ease
+  ;
+}
