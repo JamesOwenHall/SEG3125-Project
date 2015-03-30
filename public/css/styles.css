@@ -28,6 +28,8 @@ body {
 .menu-category-image {
     display: block;
     margin: auto;
+    height: 200px;
+    width: 200px;
 }
 
 /* Footer */
