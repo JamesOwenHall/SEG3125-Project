@@ -13,11 +13,28 @@
 
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/bower_components/semantic-ui/dist/semantic.min.css">
         <link rel="stylesheet" type="text/css" href="/css/styles.css">
     </head>
     <body>
-        <!-- Load partial-->
-        {{{ yield }}}
+        <div class="ui right vertical inverted labeled sidebar menu">
+            <a class="item">
+                <i class="home icon"></i>
+                Home
+            </a>
+            <a class="item">
+                <i class="block layout icon"></i>
+                Topics
+            </a>
+            <a class="item">
+                <i class="smile icon"></i>
+                Friends
+            </a>
+        </div>
+        <div class="pusher">
+            <!-- Load partial-->
+            {{{ yield }}}
+        </div>
 
         <!-- Load scripts-->
         <script src="/bower_components/jquery/dist/jquery.min.js"></script>
@@ -25,6 +42,7 @@
         <script src="/bower_components/underscore/underscore-min.js"></script>
         <script src="/bower_components/backbone/backbone.js"></script>
         <script src="/bower_components/holderjs/holder.min.js"></script>
+        <script src="/bower_components/semantic-ui/dist/semantic.min.js"></script>
 
         <!-- Load partial specific scripts-->
         {{{ yield-scripts }}}
