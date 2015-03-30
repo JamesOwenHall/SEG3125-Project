@@ -48,6 +48,14 @@ app.get('/checkout', function(req, res) {
         }});
 });
 
+app.get('/success', function(req, res) {
+    res.render('success', {
+        partials: {
+            navbar:     'navbar',
+            footer:     'footer'
+        }});
+});
+
 // 404 handling
 app.use(function(req, res, next) {
     var err = new Error('Not found!');
