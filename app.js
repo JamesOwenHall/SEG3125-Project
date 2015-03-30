@@ -27,7 +27,7 @@ app.get('/', function(req, res) {
         partials: {
             navbar:     'navbar',
             footer:     'footer',
-            modalBasic: 'modal-basic'
+            menuModals: 'menu-modals'
         }});
 });
 
