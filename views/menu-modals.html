@@ -6,12 +6,72 @@
             <div class="modal-header">
                 <button type="button" class="close" 
                     data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Build a Custom Pizza</h4>
+                <h4 class="modal-title">Build-Your-Own Pizza</h4>
             </div>
             <div class="modal-body">
-                <p>Custom Pizza Modal</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Size</label>
+                            <select class="form-control">
+                                <option>Small - $6.99</option>
+                                <option selected>Medium - $8.99</option>
+                                <option>Large - $10.99</option>
+                                <option>Extra Large - $12.99</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>Crust</label>
+                            <select class="form-control">
+                                <option>Thin</option>
+                                <option selected>Thick</option>
+                                <option>Whole Wheat</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <label>Toppings ($0.99 each)</label>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>
+                            <input type="checkbox"> Broccoli
+                        </label>
+                        <label>
+                            <input type="checkbox"> Extra Sauce
+                        </label>
+                        <label>
+                            <input type="checkbox"> Mushrooms
+                        </label>
+                    </div>
+                    <div class="col-md-4">
+                        <label>
+                            <input type="checkbox"> Olives (Black)
+                        </label>
+                        <label>
+                            <input type="checkbox"> Olives (Green)
+                        </label>
+                        <label>
+                            <input type="checkbox"> Pepperoni
+                        </label>
+                    </div>
+                    <div class="col-md-4">
+                        <label>
+                            <input type="checkbox"> Pineapple
+                        </label>
+                        <label>
+                            <input type="checkbox"> Red onions
+                        </label>
+                        <label>
+                            <input type="checkbox"> Tomatoes
+                        </label>
+                    </div>
+                </div>
+
             </div>
             <div class="modal-footer">
+                <p class="form-control-static" style="display:inline"><strong>$8.99</strong> &nbsp;</p>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary" data-dismiss="modal">Add to Cart</button>
             </div>
