@@ -105,6 +105,10 @@ body {
 
 /* Modal */
 
-.quantity {
+.modal-quantity {
   width: 20px;
+}
+
+.modal-subtotal {
+  padding-left: 10px;
 }
