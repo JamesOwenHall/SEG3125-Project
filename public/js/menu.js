@@ -1,4 +1,14 @@
+// Menu is a namespage for menu-related things, such as the modals.
 var Menu = Menu || {};
+
+// Menu.ChosenItem is an instantiated object with selected options.
+Menu.ChosenItem = function(item) {
+    this.item = item;
+    this.options = {};
+};
+
+// Menu.items is the array of items that can be chosen.  These are not
+// instances of chosen items; they include all possible options.
 Menu.items = Menu.items || {};
 
 Menu.items.chickenWings = {
@@ -26,14 +36,26 @@ Menu.items.onionRings = {
 };
 
 Menu.init = function() {
-    $('#modal-basic .add-to-cart').click(function() {
-        var itemName = $('#modal-basic .modal-title').text();
-        var item = Menu.itemWithName(itemName);
-        console.log('Adding '+itemName+' to cart...');
-        console.log(item);
-    });
+    $('#modal-basic .add-to-cart').click(addToCartEvent);
 };
 
+Menu.addToCartEvent = function() {
+    var itemName = $('#modal-basic .modal-title').text();
+    var item = Menu.itemWithName(itemName);
+    var chosenItem = new Menu.ChosenItem(item);
+
+    item.options.forEach(function(option) {
+        switch (option.type) {
+            case 'radio':
+                var val = $('#modal-basic [name="'+option.name+'"]:checked').val();
+                chosenItem.options[option.name] = val;
+        }
+    });
+
+    console.log(chosenItem);
+};
+
+// Menu.itemWithName returns the item with the given name.
 Menu.itemWithName = function(name) {
     for (var item in Menu.items) {
         if (Menu.items[item].name === name) {
@@ -42,6 +64,7 @@ Menu.itemWithName = function(name) {
     }
 };
 
+// Menu.showModal shows the modal for the menu item.
 Menu.showModal = function(menuItem) {
     var modal = $('#modal-basic');
     var modalBody = modal.find('.modal-body');
