@@ -5,9 +5,21 @@ Menu.chickenWings = {
     price: 7.99,
     options: [
         {
-            name: 'breaded',
+            name: 'Breaded',
             type: 'radio',
             values: ['breaded', 'unbreaded']
+        }
+    ]
+};
+
+Menu.onionRings = {
+    name: 'Onion Rings',
+    price: 2.99,
+    options: [
+        {
+            name: 'Size',
+            type: 'radio',
+            values: ['small', 'large']
         }
     ]
 };
@@ -23,6 +35,10 @@ Menu.showModal = function(menuItem) {
     menuItem.options.forEach(function(option) {
         switch (option.type) {
             case 'radio':
+                var optionLabel = document.createElement('label');
+                optionLabel.appendChild(document.createTextNode(option.name));
+                form.appendChild(optionLabel);
+
                 var formGroup = document.createElement('div');
                 formGroup.setAttribute('class', 'form-group');
 
