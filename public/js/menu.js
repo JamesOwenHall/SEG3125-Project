@@ -1,6 +1,7 @@
 var Menu = Menu || {};
+Menu.items = Menu.items || {};
 
-Menu.chickenWings = {
+Menu.items.chickenWings = {
     name: '10 Chicken Wings',
     price: 7.99,
     options: [
@@ -12,7 +13,7 @@ Menu.chickenWings = {
     ]
 };
 
-Menu.onionRings = {
+Menu.items.onionRings = {
     name: 'Onion Rings',
     price: 2.99,
     options: [
@@ -22,6 +23,23 @@ Menu.onionRings = {
             values: ['small', 'large']
         }
     ]
+};
+
+Menu.init = function() {
+    $('#modal-basic .add-to-cart').click(function() {
+        var itemName = $('#modal-basic .modal-title').text();
+        var item = Menu.itemWithName(itemName);
+        console.log('Adding '+itemName+' to cart...');
+        console.log(item);
+    });
+};
+
+Menu.itemWithName = function(name) {
+    for (var item in Menu.items) {
+        if (Menu.items[item].name === name) {
+            return Menu.items[item];
+        }
+    }
 };
 
 Menu.showModal = function(menuItem) {
