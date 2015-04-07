@@ -7,4 +7,7 @@ $(function () {
     $('#nav-cart').click(function () {
         $('.right.sidebar').sidebar('toggle');
     });
+
+    Menu.init();
+    Cart.init();
 });
