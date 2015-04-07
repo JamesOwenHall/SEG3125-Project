@@ -36,7 +36,7 @@ Menu.items.onionRings = {
 };
 
 Menu.init = function() {
-    $('#modal-basic .add-to-cart').click(addToCartEvent);
+    $('#modal-basic .add-to-cart').click(Menu.addToCartEvent);
 };
 
 Menu.addToCartEvent = function() {
@@ -52,7 +52,7 @@ Menu.addToCartEvent = function() {
         }
     });
 
-    console.log(chosenItem);
+    Cart.addToCart(chosenItem);
 };
 
 // Menu.itemWithName returns the item with the given name.

@@ -9,4 +9,5 @@ $(function () {
     });
 
     Menu.init();
+    Cart.init();
 });
